@@ -1,3 +1,13 @@
+/* Header */
+header div.container-fluid {
+  position: relative;
+}
+header nav i {
+  position: absolute;
+  right: 12.5rem;
+  top: 0.4rem;
+}
+
 /*Main*/
 main {
   display: grid;
@@ -64,7 +74,8 @@ section.favorite-media {
   align-items: center;
   gap: 0.5rem;
   padding: 0.5rem;
-  background-color: #f8f9fa;
+  /*background-color changes based on theme*/
+  background-color: var(--bs-tertiary-bg);
   border-radius: 8px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
@@ -83,7 +94,6 @@ section.favorite-media {
 .friend-info p:first-child {
   font-weight: bold;
 }
-
 
 /* Responsiveness for medium screen size */
 @media (max-width: 1280px) {
@@ -114,8 +124,17 @@ section.favorite-media {
   section.profile .card .card-body {
     padding: 2rem;
   }
+
+  section.friends h2 {
+    margin-bottom: 1rem;
+  }
 }
 
+@media (max-width: 980px) {
+  header nav i {
+    right: 6.875rem;
+  }
+}
 /* Responsiveness for small screen size*/
 @media (max-width: 655px) {
   main {
