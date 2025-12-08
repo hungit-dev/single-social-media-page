@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single social media page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!--Header-->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <h1 class="navbar-brand m-0">TitanNet</h1>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Mail</a>
+                        </li>
+                        <!--Profile dropdown-->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Profile
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">View Profile</a></li>
+                                <li><a class="dropdown-item" href="#">Edit Profile</a></li>
+                            </ul>
+                        </li>
+
+                        <!--Friends dropdown-->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Friends
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Friend Requests</a></li>
+                                <li><a class="dropdown-item" href="#">Find Friends</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Music</a>
+                        </li>
+
+                        <!--More dropdown-->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                More
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Groups</a></li>
+                                <li><a class="dropdown-item" href="#">Events</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">My Account</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sign Out</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--Main-->
+    <main>
+        <!-- Profile overview section -->
+        <section class="profile">
+            <div class="card">
+                <img class="card-img-top" src="./img/eren-yeager.jpg" alt="Eren Yeager profile picture">
+                <div class="card-body">
+                    <h2>Eren Yeager</h2>
+                    <p class="card-text">
+                        Former member of the Scout Regiment who seeks true freedom beyond the walls.
+                        A conflicted warrior driven by determination, pain, and an unbreakable will.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Details section -->
+        <section class="details">
+            <div class="card">
+                <h2 class="card-header fw-normal">Details</h2>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Age: 19</li>
+                    <li class="list-group-item">Location: Shiganshina District</li>
+                    <li class="list-group-item">Status: "If someone tries to take my freedom… I'll take theirs first."
+                    </li>
+                    <li class="list-group-item">Mood: Unyielding</li>
+                    <li class="list-group-item">Last login: Preparing for the next operation</li>
+                    <li class="list-group-item">Currently listening: "Call Your Name - AoT OST"</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Profile action section -->
+        <aside class="profile-action">
+            <div class="card">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Send Mission Report</li>
+                    <li class="list-group-item">Add to Regiment</li>
+                    <li class="list-group-item">Add to Allies</li>
+                    <li class="list-group-item">Mark as Titan Threat</li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Blog posts section -->
+        <section class="blogs">
+            <h2>Logs</h2>
+
+            <article class="card mb-3">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <img src="./img/eren-rumbling.jpg" class="card-img" alt="Log image">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h3 class="card-title">The Rumbling</h3>
+                            <p class="card-text">
+                                A choice no one can ever go back from. The world cornered us…
+                                so I did what I had to do. No one will take our freedom again.
+                            </p>
+                            <button class="btn btn-primary">Read more</button>
+                            <p class="card-text"><small class="text-muted">Last updated 1 days ago</small></p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card mb-3">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <img src="./img/eren-ocean-sea.webp" class="card-img" alt="Log image">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h3 class="card-title">The Outside World</h3>
+                            <p class="card-text">
+                                I finally reached the ocean. The water stretched farther than the eye could see.
+                                It was beautiful… but it felt like a reminder: the real enemy lies beyond.
+                            </p>
+                            <button class="btn btn-primary">Read more</button>
+                            <p class="card-text"><small class="text-muted">Last updated 3 day ago</small></p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card mb-3">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <img src="./img/scout-training.avif" class="card-img" alt="Log image">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h3 class="card-title">Training with the Scouts</h3>
+                            <p class="card-text">
+                                Another day of intense training. Dodged a few strikes from Mikasa.
+                                Barely made it through Levi's "motivation."
+                            </p>
+                            <button class="btn btn-primary">Read more</button>
+                            <p class="card-text"><small class="text-muted">Last updated 5 days ago</small></p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- Favorite media section-->
+        <section class="favorite-media">
+            <h2>Notable Interests</h2>
+            <div class="card">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Music: AoT OST (Vogel im Käfig, Reluctant Heroes)</li>
+                    <li class="list-group-item">Anime: —</li>
+                    <li class="list-group-item">Books: Grisha Research Notes</li>
+                    <li class="list-group-item">Games: ODM Maneuver Simulator</li>
+                    <li class="list-group-item">Film: Scout Regiment Expedition Footage</li>
+                    <li class="list-group-item">Web: Titan Behavior Logs</li>
+                    <li class="list-group-item">Photography: Beyond the Walls, destroyed landscapes</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Friends section -->
+        <section class="friends">
+            <h2>Allies</h2>
+            <div class="friends-container">
+
+                <div class="friend-item">
+                    <img src="./img/mikasa-ackerman.webp" alt="Mikasa's profile picture">
+                    <div class="friend-info">
+                        <p>Mikasa Ackerman</p>
+                        <p>Scout Regiment — Protector</p>
+                    </div>
+                </div>
+
+                <div class="friend-item">
+                    <img src="./img/armin-arlert.webp" alt="Armin's profile picture">
+                    <div class="friend-info">
+                        <p>Armin Arlert</p>
+                        <p>Strategist — Colossal Titan Shifter</p>
+                    </div>
+                </div>
+
+                <div class="friend-item">
+                    <img src="./img/levi-ackerman.jpg" alt="Levi's profile picture">
+                    <div class="friend-info">
+                        <p>Levi Ackerman</p>
+                        <p>Humanity’s Strongest Soldier</p>
+                    </div>
+                </div>
+
+                <div class="friend-item">
+                    <img src="./img/jean-kirstein.webp" alt="Jean's profile picture">
+                    <div class="friend-info">
+                        <p>Jean Kirstein</p>
+                        <p>Reluctant Leader</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+
+    <!--Footer-->
+    <footer class="container-fluid p-3 bg-dark text-center">
+        <p class="text-white">&copy; 2025 MyPage. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

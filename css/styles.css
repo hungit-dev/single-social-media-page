@@ -1,0 +1,76 @@
+/*Main*/
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 3rem;
+  gap: 1rem;
+}
+section.details {
+  grid-row: 2/3;
+}
+section.blogs {
+  grid-column: 2/4;
+  grid-row: 1/4;
+}
+aside.profile-action {
+  grid-row: 3/4;
+}
+section.friends {
+  grid-row: 2/4;
+  grid-column: 4/5;
+}
+section.favorite-media {
+  grid-column: 4/5;
+}
+
+/*Profile overview*/
+.profile img {
+  height: 220px;
+  object-fit: cover;
+}
+
+/*Profile action*/
+.profile-action li:hover {
+  text-decoration: underline;
+}
+
+/*Blogs*/
+.blogs article img {
+  height: 100%;
+  object-fit: cover;
+}
+
+/*Friends*/
+.friends h2 {
+  height: 10%;
+  margin: 0;
+}
+.friends-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  height: 90%;
+}
+.friend-item {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+.friend-item img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+.friend-info p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.friend-info p:first-child {
+  font-weight: bold;
+}
