@@ -10,33 +10,33 @@ header nav i {
 
 /*Main*/
 main {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  display: grid; /*Use Css grid layout*/
+  grid-template-columns: 1fr 1fr 1fr 1fr; /*Creates 4 equal columns*/
   padding: 3rem;
   gap: 1rem;
   margin-top: 1.5rem;
 }
 
 section.details {
-  grid-row: 2/3;
+  grid-row: 2/3; /* Places this item on grid row 2 */
 }
 
 section.blogs {
-  grid-column: 2/4;
-  grid-row: 1/4;
+  grid-column: 2/4; /* Spans across columns 2 and 3 */
+  grid-row: 1/4; /* Spans from row 1 to row 3 */
 }
 
 aside.profile-action {
-  grid-row: 3/4;
+  grid-row: 3/4; /* Places this item on grid row 3 */
 }
 
 section.friends {
-  grid-row: 2/4;
-  grid-column: 4/5;
+  grid-row: 2/4; /* Spans from row 2 to row 3 */
+  grid-column: 4/5; /* Places this item in column 4 */
 }
 
 section.favorite-media {
-  grid-column: 4/5;
+  grid-column: 4/5; /* Places this item in column 4 */
 }
 
 /*Profile overview*/
